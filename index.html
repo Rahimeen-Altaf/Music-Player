@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <li class="fa-solid fa-angle-left"></li>
+                </div>
+                <div class="circle">
+                    <li class="fa-solid fa-bars"></li>
+                </div>
+            </nav>
+            <img src="Media/468-thumbnail.png" class="song-img">
+            <h1>Kehdena</h1>
+            <p>Abdul Hannan, Annural Khalid, and ChillBazaar</p>
+
+            <audio id="song">
+                <source src="Media/Kehdena.mpeg" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><li class="fa-solid fa-backward"></li></div>
+                <div onclick="playPause()"><li class="fa-solid fa-play" id="ctrlIcon"></li></div>
+                <div><li class="fa-solid fa-forward"></li></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
